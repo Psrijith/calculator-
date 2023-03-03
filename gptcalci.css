@@ -1,0 +1,77 @@
+/* Center the calculator on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the calculator container */
+.calculator {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Style the calculator title */
+.calculator h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+/* Style the input fields */
+.calculator input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.calculator input[type="number"]:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+.calculator input[type="number"][readonly] {
+  background-color: #ddd;
+}
+
+/* Style the operator select field */
+.calculator select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the calculate button */
+.calculator button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the result input field */
+.calculator input[type="number"]#result {
+  font-weight: bold;
+  font-size: 36px;
+}
