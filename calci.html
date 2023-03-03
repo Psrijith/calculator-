@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="gptcalci.css">
+	<script type="text/javascript">
+		function calculate() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var operator = document.getElementById("operator").value;
+			var result;
+
+			if (operator == "+") {
+				result = num1 + num2;
+			} else if (operator == "-") {
+				result = num1 - num2;
+			} else if (operator == "*") {
+				result = num1 * num2;
+			} else if (operator == "/") {
+				result = num1 / num2;
+			}
+
+			document.getElementById("result").value = result;
+		}
+	</script>
+</head>
+<body>
+	<div class="calculator">
+	<h1>Calculator</h1>
+
+	<label for="num1">First number:</label>
+	<input type="number" id="num1" name="num1">
+
+	<label for="operator">Operator:</label>
+	<select id="operator" name="operator">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select>
+
+	<label for="num2">Second number:</label>
+	<input type="number" id="num2" name="num2">
+
+	<button type="button" onclick="calculate()">Calculate</button>
+
+	<label for="result">Result:</label>
+	<input type="number" id="result" name="result" readonly>
+	</div>
+</body>
+</html>
